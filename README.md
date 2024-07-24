@@ -4,12 +4,19 @@
 GitHub Embed repo is a flexible component that allows you to seamlessly embed GitHub repository information in your web applications. It provides an easy way to showcase your projects with style.
 
 Check the demo at https://oct4pie.github.io/github-embed-repo
+- Browsing through repositories
 - Display detailed GitHub repository information including stars, forks, issues, and more
 - Customizable themes
 - Lazy loading for optimal performance
 - Lightweight bundle size
 - Support for both vanilla JavaScript and React applications
 - Built with Chakra UI for consistent styling
+
+
+
+https://github.com/user-attachments/assets/b5a53a43-519f-4ef2-a138-7ded588bcd7e
+
+
 
 ## Installation
 
