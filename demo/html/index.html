@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Description</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .content {
+            margin: 20px 0;
+        }
+
+        .content h2 {
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .content p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .github-repo {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .repo-container {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+    </style>
+   <script src="https://cdn.jsdelivr.net/npm/github-embed-repo/dist/github_embed_repo.min.js"></script>
+   <!-- <script src="github_embed_repo.min.js"></script> -->
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>My Project</h1>
+        </header>
+        <div class="content">
+            <h2>Project Description</h2>
+            <p>
+                This is a detailed description of my project. It includes information about the purpose, features,
+                and how to use the project. Below, you can find additional details about the project's GitHub
+                repository.
+            </p>
+        </div>
+        <div class="repo-container">
+            <div id="repo-card" style="max-width: 500px; margin-left: auto; margin-right: auto;"></div>
+        </div>
+        <div style="display: flex; flex-direction: row; justify-content: center;">
+            <div class="repo-container">
+                <div id="repo-details"></div>
+            </div>
+
+            <div class="repo-container other-container" style="display: flex; flex-direction: column; width: 75%;">
+                <h2>Other Container</h2>
+                <div class="container-in" style="width: 100%;">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        github_embed_repo.default('repo-details', 'Oct4Pie', 'github-embed-repo', {
+            showProfile: true,
+            showStats: true,
+            theme: 'dark',
+            statsToShow: ['stars', 'forks', 'watchers', 'issues', 'pull_requests', 'contributors']
+        });
+
+        github_embed_repo.default('repo-card', 'Oct4Pie', 'github-embed-repo', {
+            showProfile: true,
+            showStats: true,
+            theme: 'dark',
+            statsToShow: ['stars', 'forks', 'watchers', 'issues', 'pull_requests', 'contributors'],
+            component: 'card',
+        });
+    </script>
+</body>
+
+</html>
